@@ -12,6 +12,7 @@ import Guarantee from "./components/Guarantee.jsx";
 import Faq from "./components/Faq.jsx";
 import FinalCta from "./components/FinalCta.jsx";
 import Footer from "./components/Footer.jsx";
+import SocialProof from "./components/SocialProof.jsx";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
       <Faq />
       <FinalCta />
       <Footer />
+      <SocialProof />
     </div>
   );
 }

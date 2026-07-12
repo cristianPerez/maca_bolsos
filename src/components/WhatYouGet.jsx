@@ -25,7 +25,7 @@ export default function WhatYouGet() {
         <Reveal delay={80}>
           <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-3xl border border-dorado/30 shadow-lg">
             <img
-              src="https://manoscreadoras.lovable.app/assets/stack-mockup-hIaKooni.jpg"
+              src="/img/stack-mockup.jpg"
               alt="Todo lo que recibes en el programa: curso de bolsos en cuentas, malla plástica, patrones, plantillas y bonos"
               loading="lazy"
               className="h-full w-full object-cover"

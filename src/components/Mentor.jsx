@@ -16,6 +16,8 @@ export default function Mentor() {
             <img
               src="/img/mentora-maca.jpg"
               alt="Mentora de MACA"
+              loading="lazy"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>

@@ -11,6 +11,8 @@ export default function ModuleCard({ image, title, subtitle, tag, duration, desc
           src={image}
           alt={title}
           draggable={false}
+          loading="lazy"
+          decoding="async"
           className="h-full w-full object-contain p-4"
         />
         <span className="absolute left-1/2 top-3 flex -translate-x-1/2 items-center gap-1.5 whitespace-nowrap rounded-full bg-terracota px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-crema shadow-md">

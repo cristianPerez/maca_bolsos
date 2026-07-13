@@ -1,6 +1,6 @@
 import TopBar from "./components/TopBar.jsx";
 import Hero from "./components/Hero.jsx";
-import VideoDemo from "./components/VideoDemo.jsx";
+import CourseCarousel from "./components/CourseCarousel.jsx";
 import Gallery from "./components/Gallery.jsx";
 import Results from "./components/Results.jsx";
 import Pains from "./components/Pains.jsx";
@@ -19,7 +19,7 @@ export default function App() {
     <div className="min-h-screen bg-crema font-sans text-negro-cafe">
       <TopBar />
       <Hero />
-      <VideoDemo />
+      <CourseCarousel />
       <Gallery />
       <Results />
       <Pains />

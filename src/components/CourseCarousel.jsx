@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal.jsx";
 import ModuleCard from "./ModuleCard.jsx";
+import { CHECKOUT_URL } from "../constants.js";
 
 const badges = [
   { icon: "★★★★★", label: "+1.200 alumnas" },
@@ -14,8 +15,8 @@ const BAG = "https://manoscreadoras.lovable.app/assets";
 // Cada slide del carrusel usa la misma tarjeta maestra (ModuleCard).
 // Solo cambia imagen, título, subtítulo y tag/duración — el diseño no cambia.
 const slides = [
-  { image: "/img/curso/cards/empieza.jpg", title: "Empieza Aquí", subtitle: "Start here", tag: "HTML", desc: "Bienvenida y primeros pasos" },
-  { image: "/img/curso/cards/comunidad.jpg", title: "Únete a la comunidad", subtitle: "Join our community", tag: "HTML", desc: "Comunidad privada de alumnas" },
+  { image: "/img/curso/cards/empieza.jpg", title: "Empieza Aquí", subtitle: "Start here", tag: "Inicio", desc: "Bienvenida y primeros pasos" },
+  { image: "/img/curso/cards/comunidad.jpg", title: "Únete a la comunidad", subtitle: "Join our community", tag: "Comunidad", desc: "Comunidad privada de alumnas" },
   { image: `${BAG}/bag-pearl-hobo-CnE8Gf-d.png`, title: "Tutorial 1", subtitle: "Malla plástica y cuentas", duration: "24:18" },
   { image: `${BAG}/bag-glacier-blue--LWN4-v5.jpg`, title: "Tutorial 2", subtitle: "Cuentas azul hielo · asa rígida", duration: "38:52" },
   { image: `${BAG}/bag-pink-crystal-Bfvk7sAM.png`, title: "Tutorial 3", subtitle: "Cristal rosado · cadena dorada", duration: "45:07" },
@@ -25,15 +26,16 @@ const slides = [
   { image: `${BAG}/bag-pearl-royale-Cy5cVop9.jpg`, title: "Tutorial 7", subtitle: "Perlas blancas · bordado a mano", duration: "22:45" },
   { image: `${BAG}/bag-champagne-facetado-i7fCs5gy.jpg`, title: "Tutorial 8", subtitle: "Cristal champagne · cadena dorada", duration: "01:26:29" },
   { image: `${BAG}/bag-pearl-coin-boQNDBR1.png`, title: "Así colocas un herraje", subtitle: "Cierre y herraje profesional", duration: "35:37" },
-  { image: "/img/curso/cards/patrones.jpg", title: "Patrones de bolsos", subtitle: "En cuentas · descargables", tag: "HTML", desc: "+50 diseños listos para usar" },
+  { image: "/img/curso/cards/patrones.jpg", title: "Patrones de bolsos", subtitle: "En cuentas · descargables", tag: "Descargable", desc: "+50 diseños listos para usar" },
 ];
 
-export default function VideoDemo() {
+export default function CourseCarousel() {
   const [index, setIndex] = useState(0);
   const [drag, setDrag] = useState(0); // desplazamiento en px durante el arrastre
   const [vw, setVw] = useState(0); // ancho del viewport del carrusel
   const containerRef = useRef(null);
   const pointer = useRef({ down: false, startX: 0, id: null });
+  const moved = useRef(false); // true si hubo arrastre (para no navegar al soltar)
 
   const count = slides.length;
   const clamp = (i) => Math.max(0, Math.min(count - 1, i));
@@ -59,12 +61,19 @@ export default function VideoDemo() {
 
   const onPointerDown = (e) => {
     pointer.current = { down: true, startX: e.clientX, id: e.pointerId };
-    e.currentTarget.setPointerCapture?.(e.pointerId);
+    moved.current = false;
+    // Sin setPointerCapture: capturar el puntero en el contenedor hace que el
+    // navegador reasigne el evento "click" al contenedor y nunca llegue al <a>,
+    // por lo que en escritorio el enlace no navegaba. El arrastre sigue
+    // funcionando (táctil por captura implícita; ratón mientras el cursor esté
+    // dentro, y onPointerLeave cierra el arrastre si sale).
   };
 
   const onPointerMove = (e) => {
     if (!pointer.current.down) return;
-    setDrag(e.clientX - pointer.current.startX);
+    const delta = e.clientX - pointer.current.startX;
+    if (Math.abs(delta) > 6) moved.current = true;
+    setDrag(delta);
   };
 
   const endDrag = () => {
@@ -138,7 +147,23 @@ export default function VideoDemo() {
                     style={{ width: cardWidth }}
                     aria-hidden={i !== index}
                   >
-                    <ModuleCard {...slide} />
+                    {/* Toda la tarjeta enlaza al pago; si hubo arrastre no navega.
+                        draggable={false} evita que el navegador inicie su propio
+                        arrastre nativo del enlace, que cancelaba el swipe. */}
+                    <a
+                      href={CHECKOUT_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Ir al curso — ${slide.title}`}
+                      draggable={false}
+                      onDragStart={(e) => e.preventDefault()}
+                      onClick={(e) => {
+                        if (moved.current) e.preventDefault();
+                      }}
+                      className="block rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-terracota focus-visible:ring-offset-2"
+                    >
+                      <ModuleCard {...slide} />
+                    </a>
                   </div>
                 ))}
               </div>

@@ -67,6 +67,7 @@
     "kicker": "Resultados reales",
     "heading": "Más de 1.200 bolsos creados por alumnas",
     "subtitle": "Mira lo que nuestras alumnas están creando con sus propias manos.",
+    "images": ["/img/results/whatsapp-1-es.jpg", "/img/results/whatsapp-2-es.jpg"],
     "alt1": "Conversación de WhatsApp con alumna 1",
     "alt2": "Conversación de WhatsApp con alumna 2"
   },
@@ -112,6 +113,7 @@
   "whatYouGet": {
     "kicker": "El programa",
     "heading": "Todo lo que recibes · +50 tutoriales",
+    "stackImage": "/img/stack-mockup-es.jpg",
     "imgAlt": "Todo lo que recibes en el programa: curso de bolsos en cuentas, malla plástica, patrones, plantillas y bonos",
     "items": [
       { "title": "Bolsos en cuentas", "desc": "Técnica boutique para tejer bolsos en cuentas: bases, tensión y acabados profesionales." },

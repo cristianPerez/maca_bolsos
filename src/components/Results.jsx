@@ -1,17 +1,12 @@
 import { useTranslation } from "react-i18next";
 import Reveal from "./Reveal.jsx";
 
-const BASE = "https://manoscreadoras.lovable.app/assets";
-
-// TODO: reemplazar estas imágenes (capturas de WhatsApp de manoscreadoras.lovable.app)
-// por las capturas/resultados reales definitivos alojados en nuestro propio dominio.
-const screenshots = [
-  { src: `${BASE}/whatsapp-2-CiCuDxsS.jpg`, altKey: "results.alt1" },
-  { src: `${BASE}/whatsapp-3-DcoGBSYB.jpg`, altKey: "results.alt2" },
-];
+// Las capturas cambian según idioma (i18n): results.images -> *-es.jpg / *-en.jpg
+const altKeys = ["results.alt1", "results.alt2"];
 
 export default function Results() {
   const { t } = useTranslation();
+  const images = t("results.images", { returnObjects: true });
 
   return (
     <section className="bg-crema px-4 py-16 sm:py-24">
@@ -29,12 +24,12 @@ export default function Results() {
         </Reveal>
 
         <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2">
-          {screenshots.map((shot, i) => (
-            <Reveal key={shot.src} delay={i * 120}>
+          {images.map((src, i) => (
+            <Reveal key={src} delay={i * 120}>
               <div className="overflow-hidden rounded-2xl border border-dorado/30 shadow-lg">
                 <img
-                  src={shot.src}
-                  alt={t(shot.altKey)}
+                  src={src}
+                  alt={t(altKeys[i])}
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />

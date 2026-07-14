@@ -21,9 +21,9 @@ export default function WhatYouGet() {
 
         <Reveal delay={80}>
           <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-3xl border border-dorado/30 shadow-lg">
-            {/* TODO: reemplazar esta imagen (stack-mockup.jpg) por el mockup final del stack de productos. */}
+            {/* Mockup del stack según idioma (i18n): -es.jpg / -en.jpg */}
             <img
-              src="/img/stack-mockup.jpg"
+              src={t("whatYouGet.stackImage")}
               alt={t("whatYouGet.imgAlt")}
               loading="lazy"
               className="h-full w-full object-cover"

@@ -67,6 +67,7 @@
     "kicker": "Real results",
     "heading": "More than 1,200 bags created by students",
     "subtitle": "See what our students are creating with their own hands.",
+    "images": ["/img/results/whatsapp-1-en.jpg", "/img/results/whatsapp-2-en.jpg"],
     "alt1": "WhatsApp conversation with student 1",
     "alt2": "WhatsApp conversation with student 2"
   },
@@ -112,6 +113,7 @@
   "whatYouGet": {
     "kicker": "The program",
     "heading": "Everything you get · +50 tutorials",
+    "stackImage": "/img/stack-mockup-en.jpg",
     "imgAlt": "Everything you get in the program: beaded bags course, plastic canvas, patterns, templates and bonuses",
     "items": [
       { "title": "Beaded bags", "desc": "Boutique technique to weave beaded bags: bases, tension and professional finishes." },

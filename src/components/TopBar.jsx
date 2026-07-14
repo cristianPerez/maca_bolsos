@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 import { useCountdown } from "../hooks/useCountdown.js";
+import LanguageSwitcher from "./LanguageSwitcher.jsx";
 
 function Unit({ value, label }) {
   return (
@@ -14,6 +16,7 @@ function Unit({ value, label }) {
 }
 
 export default function TopBar() {
+  const { t } = useTranslation();
   const { hours, minutes, seconds } = useCountdown();
 
   return (
@@ -23,18 +26,21 @@ export default function TopBar() {
           <span className="animate-pulse text-base sm:text-lg">⚠️</span>
           <span>
             <span className="font-bold uppercase tracking-wide text-dorado">
-              La oferta está finalizando
-            </span>{" "}
-            — cuando el contador llegue a cero, el precio vuelve a{" "}
+              {t("topbar.label")}
+            </span>
+            {t("topbar.mid")}
             <span className="font-bold text-crema">$55</span>.
           </span>
         </p>
-        <div className="flex items-center gap-2">
-          <Unit value={hours} label="Hrs" />
-          <span className="pb-4 font-serif text-xl text-dorado">:</span>
-          <Unit value={minutes} label="Min" />
-          <span className="pb-4 font-serif text-xl text-dorado">:</span>
-          <Unit value={seconds} label="Seg" />
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <Unit value={hours} label={t("countdown.hrs")} />
+            <span className="pb-4 font-serif text-xl text-dorado">:</span>
+            <Unit value={minutes} label={t("countdown.min")} />
+            <span className="pb-4 font-serif text-xl text-dorado">:</span>
+            <Unit value={seconds} label={t("countdown.sec")} />
+          </div>
+          <LanguageSwitcher />
         </div>
       </div>
     </div>

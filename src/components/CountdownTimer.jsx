@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useCountdown } from "../hooks/useCountdown.js";
 
 function Unit({ value, label }) {
@@ -14,17 +15,18 @@ function Unit({ value, label }) {
 }
 
 export default function CountdownTimer({ variant = "dark" }) {
+  const { t } = useTranslation();
   const { hours, minutes, seconds } = useCountdown();
 
   const separatorColor = variant === "dark" ? "text-crema" : "text-negro-cafe";
 
   return (
     <div className="flex items-center gap-2">
-      <Unit value={hours} label="Hrs" />
+      <Unit value={hours} label={t("countdown.hrs")} />
       <span className={`pb-4 font-serif text-xl ${separatorColor}`}>:</span>
-      <Unit value={minutes} label="Min" />
+      <Unit value={minutes} label={t("countdown.min")} />
       <span className={`pb-4 font-serif text-xl ${separatorColor}`}>:</span>
-      <Unit value={seconds} label="Seg" />
+      <Unit value={seconds} label={t("countdown.sec")} />
     </div>
   );
 }

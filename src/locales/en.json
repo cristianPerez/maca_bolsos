@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "title": "MACA · Luxury Beaded Bags Course — Make Them From Home",
+    "description": "Learn to create luxury bags in beads and plastic canvas from home, handmade · your own brand. MACA online course, 2026 edition."
+  },
+  "switcher": {
+    "label": "Language"
+  },
+  "countdown": {
+    "hrs": "Hrs",
+    "min": "Min",
+    "sec": "Sec"
+  },
+  "topbar": {
+    "label": "The offer is ending",
+    "mid": " — when the timer hits zero, the price goes back to "
+  },
+  "hero": {
+    "badge": "Premium Program · 2026 Edition",
+    "titleA": "Create luxury",
+    "titleHighlight": "beaded",
+    "titleB": "bags from home",
+    "subtitle": "The complete program to craft bags in beads and plastic canvas with boutique-quality finishes — no experience needed, with patterns, step-by-step videos and real mentorship.",
+    "buyingNow": "42 people are buying right now",
+    "ctaPrimary": "I want to start today",
+    "ctaSecondary": "See what you'll create"
+  },
+  "carousel": {
+    "heading": "Here's what our course looks like inside",
+    "subtitle": "A quick look at the lessons, the materials and the community that will be with you through every stitch and every knot.",
+    "badges": ["+1,200 students", "7-day guarantee", "Lifetime access"],
+    "aria": {
+      "roledescription": "carousel",
+      "region": "A look inside the course",
+      "goCourse": "Go to the course — {{title}}",
+      "prev": "Previous image",
+      "next": "Next image",
+      "goToImage": "Go to image {{n}}"
+    },
+    "slides": [
+      { "title": "Start Here", "subtitle": "Begin here", "tag": "Start", "desc": "Welcome and first steps" },
+      { "title": "Join the community", "subtitle": "Student community", "tag": "Community", "desc": "Private student community" },
+      { "title": "Tutorial 1", "subtitle": "Plastic canvas and beads" },
+      { "title": "Tutorial 2", "subtitle": "Ice-blue beads · rigid handle" },
+      { "title": "Tutorial 3", "subtitle": "Pink crystal · gold chain" },
+      { "title": "Tutorial 4", "subtitle": "Ivory pearls · silk bow" },
+      { "title": "Tutorial 5", "subtitle": "Black beads · night style" },
+      { "title": "Tutorial 6", "subtitle": "Gold crystal · clutch" },
+      { "title": "Tutorial 7", "subtitle": "White pearls · hand embroidery" },
+      { "title": "Tutorial 8", "subtitle": "Champagne crystal · gold chain" },
+      { "title": "How to attach hardware", "subtitle": "Professional clasp and hardware" },
+      { "title": "Bag patterns", "subtitle": "In beads · downloadable", "tag": "Downloadable", "desc": "+50 designs ready to use" }
+    ]
+  },
+  "pains": {
+    "heading": "If you've already tried making bags… but they didn't turn out the way you hoped, you're not the only one.",
+    "items": [
+      { "title": "They don't look professional", "desc": "The finishes come out amateur no matter how hard you try." },
+      { "title": "You don't know which materials to use", "desc": "Beads, threads, hardware… you get lost among options and suppliers." },
+      { "title": "The weave isn't firm", "desc": "Your bag warps, loses its shape or the thread slips out." },
+      { "title": "You don't know what to charge", "desc": "You give your work away or scare clients off with the price." },
+      { "title": "You waste time trying without guidance", "desc": "Scattered YouTube tutorials that skip the key steps." }
+    ],
+    "closing": "The difference isn't talent. It's the right technique."
+  },
+  "results": {
+    "kicker": "Real results",
+    "heading": "More than 1,200 bags created by students",
+    "subtitle": "See what our students are creating with their own hands.",
+    "alt1": "WhatsApp conversation with student 1",
+    "alt2": "WhatsApp conversation with student 2"
+  },
+  "gallery": {
+    "kicker": "You'll learn to make them",
+    "heading": "These are some of the models you'll learn to make in our course",
+    "subtitle": "Real designs created step by step with the program's techniques: bags in beads and plastic canvas.",
+    "altPrefix": "Bag",
+    "descs": [
+      "PINK CRYSTAL · GOLD CHAIN",
+      "IVORY PEARLS · SILK BOW",
+      "WHITE PEARLS · XL PEARL HANDLE",
+      "IRIDESCENT GOLD CRYSTAL · CLUTCH",
+      "PEARL PURSE · SILVER CLASP",
+      "CHAMPAGNE CRYSTAL · GOLD CHAIN",
+      "SHINY BLACK BEADS · NIGHT STYLE",
+      "ICE-BLUE BEADS · RIGID HANDLE",
+      "WHITE PEARLS · HAND EMBROIDERY"
+    ]
+  },
+  "offer": {
+    "kicker": "Instant digital access · 7-day guarantee",
+    "rating": "★★★★★ 4.9/5 · +1,200 active students",
+    "heading": "Complete Program · Luxury Bags From Home",
+    "subtitle": "More than 50 step-by-step tutorials, exclusive patterns and the boutique methodology so you can create and sell your first collection.",
+    "priceNote": "One-time payment · Lifetime access",
+    "bonusesTitle": "Buy today and get free:",
+    "free": "FREE",
+    "bonuses": [
+      "Beaded bags + plastic canvas course",
+      "50 exclusive downloadable patterns",
+      "Premium supplier directory",
+      "Costs and pricing template",
+      "Boutique sales method",
+      "Private student community"
+    ],
+    "cta": "I want access now",
+    "secure": "🔒 Secure payment via Hotmart · 12 people are completing their purchase…",
+    "guaranteeLine": "★ Full guarantee: if within 7 days it's not for you, Hotmart refunds 100% of your investment.",
+    "discountEnding": "⏳ The discount is already ending",
+    "timerNote": "When the timer hits zero, the price goes back to $55."
+  },
+  "whatYouGet": {
+    "kicker": "The program",
+    "heading": "Everything you get · +50 tutorials",
+    "imgAlt": "Everything you get in the program: beaded bags course, plastic canvas, patterns, templates and bonuses",
+    "items": [
+      { "title": "Beaded bags", "desc": "Boutique technique to weave beaded bags: bases, tension and professional finishes." },
+      { "title": "Plastic canvas bags", "desc": "Structure, reinforcements and assembly of plastic canvas bags with a luxury style." },
+      { "title": "50 exclusive patterns", "desc": "More than 50 downloadable designs ready to apply to your own creations." },
+      { "title": "Supplier directory", "desc": "Where to buy beads, hardware and premium materials at the best price." },
+      { "title": "Costs and pricing template", "desc": "Calculate the fair price of your bag and stop giving your work away." },
+      { "title": "Digital marketing manual", "desc": "How to photograph, showcase and sell your bags on social media." }
+    ]
+  },
+  "mentor": {
+    "kicker": "Meet your mentor",
+    "name": "Maca Perez",
+    "role": "Specialist in handcrafted luxury bags",
+    "imgAlt": "MACA mentor",
+    "p1": "For more than 5 years I've guided women from different countries to learn clear techniques for creating bags in beads and plastic canvas with elegant finishes and a boutique style.",
+    "p2": "My methodology is designed so you can learn step by step, craft sophisticated pieces and turn your creativity into a collection with its own identity.",
+    "badges": [
+      { "label": "Step by step", "tag": "METHOD" },
+      { "label": "Boutique", "tag": "STYLE" },
+      { "label": "From scratch", "tag": "ACCESS" }
+    ],
+    "cta": "Enroll me now"
+  },
+  "community": {
+    "kicker": "Community",
+    "iconAlt": "Private student community",
+    "heading": "A private community where students share progress and land their first clients",
+    "subtitle": "You'll be part of a private community where women from all over the world share their creations, support each other and grow together crafting bags with a boutique style.",
+    "perks": [
+      "Get your questions answered with direct support.",
+      "Share your progress and get feedback from other students.",
+      "Get inspired with new designs every week.",
+      "Connect with women who are also building a business."
+    ]
+  },
+  "guarantee": {
+    "imgAlt": "7-day full guarantee with Hotmart",
+    "heading": "7-day full guarantee with Hotmart",
+    "emphasis": "You have nothing to lose!",
+    "body": "Access the program, review every module, explore all the resources and see for yourself if it's what you were looking for. If the program doesn't exceed your expectations, Hotmart refunds 100% of your investment, no questions asked.",
+    "cta": "Get access with guarantee"
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "subtitle": "Everything you need to know before you start.",
+    "items": [
+      { "q": "Is the course live or already recorded?", "a": "The course is 100% recorded in step-by-step videos, so you learn at your own pace, with no schedules and as many times as you want." },
+      { "q": "Do I need to know how to weave or have experience?", "a": "No. The course is designed from scratch, even if you've never made a bag before." },
+      { "q": "Does it include a materials list?", "a": "Yes. Every tutorial lists the materials needed, plus a directory of affordable suppliers to find everything easily." },
+      { "q": "Will I be able to sell the bags I make?", "a": "Yes. You can create your own collection and sell your bags with boutique-style finishes." },
+      { "q": "Does the course include the molds or patterns?", "a": "Yes. It includes more than 50 exclusive patterns ready to apply to your designs." },
+      { "q": "What kind of bags will I learn to make?", "a": "You'll learn beaded (pearl) bags and plastic canvas bags, with elegant finishes and a luxury style." },
+      { "q": "Is access limited or forever?", "a": "Access is for life. You can log in whenever you want and repeat the lessons as many times as you need." },
+      { "q": "Can I watch the course on my phone?", "a": "Yes. You can access it from your phone, tablet or computer at any time." },
+      { "q": "Does the course include support or help?", "a": "Yes. You'll have access to our private community where you can get your questions answered and share your progress." },
+      { "q": "What language is the course in?", "a": "The videos are in Spanish, but many are visual and step-by-step, so they're easy to follow even without listening." },
+      { "q": "How long until I see results?", "a": "From the very first lessons you'll be able to create your first bags. Many students start selling within a few weeks." },
+      { "q": "Is this course only for a hobby or also for business?", "a": "It's for both. You can do it as a hobby or turn it into a source of income from home." },
+      { "q": "What exactly does the course include?", "a": "It includes: ✦ Beaded bags course ✦ Plastic canvas bags course ✦ 50 exclusive patterns ✦ Supplier directory ✦ Costs and pricing template ✦ Digital marketing manual ✦ Private community." },
+      { "q": "How do I receive access after paying?", "a": "You'll receive instant access in your email to log in to the platform." },
+      { "q": "Is this a course or do you sell the physical bags?", "a": "This is a digital course. You'll learn to create your own bags step by step." },
+      { "q": "Do I need to buy materials before starting?", "a": "You don't need materials to start. First you access the course, explore the designs and choose which bag you want to create. That way you buy only what you need and avoid spending money on materials you won't use." }
+    ]
+  },
+  "finalCta": {
+    "badge": "🔥 Last chance — the offer is ending",
+    "heading": "Your next luxury bag starts today",
+    "subtitle": "Join more than 1,200 students who are already creating with their own hands. Special price available for a limited time only.",
+    "cta": "I want to start today",
+    "timerNote": "When the timer hits zero, the price goes back to $55"
+  },
+  "footer": {
+    "tagline": "handmade · own brand",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "refund": "Refund policy",
+    "contact": "Contact",
+    "disclaimer": "This site is not part of, nor endorsed by, Facebook™, Google™ or Hotmart™. Results vary based on each student's effort and dedication.",
+    "rights": "© 2026 MACA. All rights reserved."
+  },
+  "socialProof": {
+    "from": "from",
+    "bought": "bought the course",
+    "ago": "{{min}} min ago",
+    "countries": {
+      "mexico": "Mexico",
+      "colombia": "Colombia",
+      "argentina": "Argentina",
+      "chile": "Chile",
+      "peru": "Peru",
+      "spain": "Spain",
+      "ecuador": "Ecuador",
+      "uruguay": "Uruguay"
+    }
+  }
+}

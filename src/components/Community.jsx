@@ -1,13 +1,10 @@
+import { useTranslation } from "react-i18next";
 import Reveal from "./Reveal.jsx";
 
-const perks = [
-  "Resuelve tus dudas con acompañamiento directo.",
-  "Comparte tus avances y recibe feedback de otras alumnas.",
-  "Inspírate con nuevos diseños cada semana.",
-  "Conecta con mujeres que también están emprendiendo.",
-];
-
 export default function Community() {
+  const { t } = useTranslation();
+  const perks = t("community.perks", { returnObjects: true });
+
   return (
     <section className="bg-crema px-4 py-16 sm:py-24">
       <div className="mx-auto max-w-4xl">
@@ -16,22 +13,19 @@ export default function Community() {
             <div className="mb-4 h-16 w-16 overflow-hidden rounded-2xl border border-verde-oliva/40">
               <img
                 src="https://manoscreadoras.lovable.app/assets/community-icon-BSSpcx-y.jpg"
-                alt="Comunidad privada de alumnas"
+                alt={t("community.iconAlt")}
                 loading="lazy"
                 className="h-full w-full object-cover"
               />
             </div>
             <span className="text-sm font-semibold uppercase tracking-widest text-verde-oliva">
-              Comunidad
+              {t("community.kicker")}
             </span>
             <h2 className="mt-2 font-serif text-3xl font-semibold text-negro-cafe sm:text-4xl">
-              Comunidad privada donde alumnas comparten avances y consiguen sus
-              primeras clientas
+              {t("community.heading")}
             </h2>
             <p className="mt-4 text-negro-cafe/75">
-              Serás parte de una comunidad privada donde mujeres de todo el
-              mundo comparten sus creaciones, se apoyan y crecen juntas
-              creando bolsos con estilo boutique.
+              {t("community.subtitle")}
             </p>
           </Reveal>
 

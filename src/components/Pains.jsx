@@ -1,21 +1,16 @@
+import { useTranslation } from "react-i18next";
 import Reveal from "./Reveal.jsx";
 
-const pains = [
-  { title: "No se ven profesionales", desc: "Los acabados quedan amateur por más empeño que pongas." },
-  { title: "No sabes qué materiales usar", desc: "Cuentas, hilos, herrajes… te pierdes entre opciones y proveedores." },
-  { title: "El tejido no queda firme", desc: "Tu bolso se deforma, pierde la forma o se sale el hilo." },
-  { title: "No sabes cuánto cobrar", desc: "Regalas tu trabajo o asustas a las clientas con el precio." },
-  { title: "Pierdes tiempo probando sin guía", desc: "Tutoriales sueltos de YouTube que saltan los pasos clave." },
-];
-
 export default function Pains() {
+  const { t } = useTranslation();
+  const pains = t("pains.items", { returnObjects: true });
+
   return (
     <section className="bg-arena/40 px-4 py-16 sm:py-24">
       <div className="mx-auto max-w-3xl text-center">
         <Reveal>
           <h2 className="font-serif text-3xl font-semibold text-negro-cafe sm:text-4xl">
-            Si ya intentaste hacer bolsos… pero no te quedaron como esperabas,
-            no eres la única.
+            {t("pains.heading")}
           </h2>
         </Reveal>
 
@@ -35,7 +30,7 @@ export default function Pains() {
 
         <Reveal delay={pains.length * 80 + 100}>
           <p className="mt-10 font-serif text-2xl font-semibold text-terracota-oscuro sm:text-3xl">
-            La diferencia no es el talento. Es la técnica correcta.
+            {t("pains.closing")}
           </p>
         </Reveal>
       </div>

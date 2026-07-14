@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "title": "MACA · Curso Bolsos de Lujo en Cuentas desde Casa",
+    "description": "Aprende a crear bolsos de lujo en cuentas y malla plástica desde casa, hecho a mano · marca propia. Curso online MACA, edición 2026."
+  },
+  "switcher": {
+    "label": "Idioma"
+  },
+  "countdown": {
+    "hrs": "Hrs",
+    "min": "Min",
+    "sec": "Seg"
+  },
+  "topbar": {
+    "label": "La oferta está finalizando",
+    "mid": " — cuando el contador llegue a cero, el precio vuelve a "
+  },
+  "hero": {
+    "badge": "Programa Premium · Edición 2026",
+    "titleA": "Crea bolsos de lujo en",
+    "titleHighlight": "cuentas",
+    "titleB": "desde casa",
+    "subtitle": "El programa completo para tejer bolsos en cuentas y malla plástica con acabados de boutique — sin experiencia previa, con patrones, videos paso a paso y mentoría real.",
+    "buyingNow": "42 personas están comprando ahora",
+    "ctaPrimary": "Quiero comenzar hoy",
+    "ctaSecondary": "Ver lo que crearás"
+  },
+  "carousel": {
+    "heading": "Así se ve nuestro curso por dentro",
+    "subtitle": "Un vistazo rápido a las clases, los materiales y la comunidad que te acompañará en cada punto y cada nudo.",
+    "badges": ["+1.200 alumnas", "Garantía 7 días", "Acceso de por vida"],
+    "aria": {
+      "roledescription": "carrusel",
+      "region": "Vistazo al curso por dentro",
+      "goCourse": "Ir al curso — {{title}}",
+      "prev": "Imagen anterior",
+      "next": "Imagen siguiente",
+      "goToImage": "Ir a la imagen {{n}}"
+    },
+    "slides": [
+      { "title": "Empieza Aquí", "subtitle": "Comienza aquí", "tag": "Inicio", "desc": "Bienvenida y primeros pasos" },
+      { "title": "Únete a la comunidad", "subtitle": "Comunidad de alumnas", "tag": "Comunidad", "desc": "Comunidad privada de alumnas" },
+      { "title": "Tutorial 1", "subtitle": "Malla plástica y cuentas" },
+      { "title": "Tutorial 2", "subtitle": "Cuentas azul hielo · asa rígida" },
+      { "title": "Tutorial 3", "subtitle": "Cristal rosado · cadena dorada" },
+      { "title": "Tutorial 4", "subtitle": "Perlas marfil · lazo de seda" },
+      { "title": "Tutorial 5", "subtitle": "Cuentas negras · estilo noche" },
+      { "title": "Tutorial 6", "subtitle": "Cristal dorado · clutch" },
+      { "title": "Tutorial 7", "subtitle": "Perlas blancas · bordado a mano" },
+      { "title": "Tutorial 8", "subtitle": "Cristal champagne · cadena dorada" },
+      { "title": "Así colocas un herraje", "subtitle": "Cierre y herraje profesional" },
+      { "title": "Patrones de bolsos", "subtitle": "En cuentas · descargables", "tag": "Descargable", "desc": "+50 diseños listos para usar" }
+    ]
+  },
+  "pains": {
+    "heading": "Si ya intentaste hacer bolsos… pero no te quedaron como esperabas, no eres la única.",
+    "items": [
+      { "title": "No se ven profesionales", "desc": "Los acabados quedan amateur por más empeño que pongas." },
+      { "title": "No sabes qué materiales usar", "desc": "Cuentas, hilos, herrajes… te pierdes entre opciones y proveedores." },
+      { "title": "El tejido no queda firme", "desc": "Tu bolso se deforma, pierde la forma o se sale el hilo." },
+      { "title": "No sabes cuánto cobrar", "desc": "Regalas tu trabajo o asustas a las clientas con el precio." },
+      { "title": "Pierdes tiempo probando sin guía", "desc": "Tutoriales sueltos de YouTube que saltan los pasos clave." }
+    ],
+    "closing": "La diferencia no es el talento. Es la técnica correcta."
+  },
+  "results": {
+    "kicker": "Resultados reales",
+    "heading": "Más de 1.200 bolsos creados por alumnas",
+    "subtitle": "Mira lo que nuestras alumnas están creando con sus propias manos.",
+    "alt1": "Conversación de WhatsApp con alumna 1",
+    "alt2": "Conversación de WhatsApp con alumna 2"
+  },
+  "gallery": {
+    "kicker": "Aprenderás a crearlos",
+    "heading": "Estos son algunos modelos que aprenderás en nuestro curso",
+    "subtitle": "Diseños reales creados paso a paso con las técnicas del programa: bolsos en cuentas y malla plástica.",
+    "altPrefix": "Bolso",
+    "descs": [
+      "CRISTAL ROSADO · CADENA DORADA",
+      "PERLAS MARFIL · LAZO DE SEDA",
+      "PERLAS BLANCAS · ASA DE PERLAS XL",
+      "CRISTAL DORADO TORNASOL · CLUTCH",
+      "MONEDERO DE PERLAS · CIERRE PLATEADO",
+      "CRISTAL CHAMPAGNE · CADENA DORADA",
+      "CUENTAS NEGRAS BRILLANTES · ESTILO NOCHE",
+      "CUENTAS AZUL HIELO · ASA RÍGIDA",
+      "PERLAS BLANCAS · BORDADO A MANO"
+    ]
+  },
+  "offer": {
+    "kicker": "Acceso digital inmediato · Garantía 7 días",
+    "rating": "★★★★★ 4.9/5 · +1.200 alumnas activas",
+    "heading": "Programa Completo · Bolsos de Lujo desde Casa",
+    "subtitle": "Más de 50 tutoriales paso a paso, patrones exclusivos y la metodología boutique para que crees y vendas tu primera colección.",
+    "priceNote": "Pago único · Acceso de por vida",
+    "bonusesTitle": "Compra hoy y obtén gratis:",
+    "free": "GRATIS",
+    "bonuses": [
+      "Curso de bolsos en cuentas + malla plástica",
+      "50 patrones exclusivos descargables",
+      "Directorio de proveedores premium",
+      "Plantilla de costos y precios",
+      "Método ventas boutique",
+      "Comunidad privada de alumnas"
+    ],
+    "cta": "Quiero acceder ahora",
+    "secure": "🔒 Pago seguro vía Hotmart · 12 personas están finalizando su compra…",
+    "guaranteeLine": "★ Garantía total: si en 7 días no es para ti, Hotmart te devuelve el 100% de tu inversión.",
+    "discountEnding": "⏳ El descuento ya está finalizando",
+    "timerNote": "Cuando el contador llegue a cero, el precio vuelve a $55."
+  },
+  "whatYouGet": {
+    "kicker": "El programa",
+    "heading": "Todo lo que recibes · +50 tutoriales",
+    "imgAlt": "Todo lo que recibes en el programa: curso de bolsos en cuentas, malla plástica, patrones, plantillas y bonos",
+    "items": [
+      { "title": "Bolsos en cuentas", "desc": "Técnica boutique para tejer bolsos en cuentas: bases, tensión y acabados profesionales." },
+      { "title": "Bolsos en malla plástica", "desc": "Estructura, refuerzos y ensamblaje de bolsos en malla plástica con estilo de lujo." },
+      { "title": "50 patrones exclusivos", "desc": "Más de 50 diseños descargables listos para aplicar en tus propias creaciones." },
+      { "title": "Directorio de proveedores", "desc": "Dónde comprar cuentas, herrajes y materiales premium al mejor precio." },
+      { "title": "Plantilla de costos y precios", "desc": "Calcula el precio justo de tu bolso y deja de regalar tu trabajo." },
+      { "title": "Manual de marketing digital", "desc": "Cómo fotografiar, mostrar y vender tus bolsos por redes sociales." }
+    ]
+  },
+  "mentor": {
+    "kicker": "Conoce a tu mentora",
+    "name": "Maca Perez",
+    "role": "Especialista en bolsos artesanales de lujo",
+    "imgAlt": "Mentora de MACA",
+    "p1": "Desde hace más de 5 años acompaño a mujeres de diferentes países a aprender técnicas claras para crear bolsos en cuentas y malla plástica con acabados elegantes y estilo boutique.",
+    "p2": "Mi metodología está diseñada para que puedas aprender paso a paso, desarrollar piezas sofisticadas y transformar tu creatividad en una colección con identidad propia.",
+    "badges": [
+      { "label": "Paso a paso", "tag": "MÉTODO" },
+      { "label": "Boutique", "tag": "ESTILO" },
+      { "label": "Desde cero", "tag": "ACCESO" }
+    ],
+    "cta": "Inscribirme ahora"
+  },
+  "community": {
+    "kicker": "Comunidad",
+    "iconAlt": "Comunidad privada de alumnas",
+    "heading": "Comunidad privada donde alumnas comparten avances y consiguen sus primeras clientas",
+    "subtitle": "Serás parte de una comunidad privada donde mujeres de todo el mundo comparten sus creaciones, se apoyan y crecen juntas creando bolsos con estilo boutique.",
+    "perks": [
+      "Resuelve tus dudas con acompañamiento directo.",
+      "Comparte tus avances y recibe feedback de otras alumnas.",
+      "Inspírate con nuevos diseños cada semana.",
+      "Conecta con mujeres que también están emprendiendo."
+    ]
+  },
+  "guarantee": {
+    "imgAlt": "7 días de garantía total con Hotmart",
+    "heading": "7 días de garantía total con Hotmart",
+    "emphasis": "¡No tienes nada que perder!",
+    "body": "Accede al programa, revisa cada módulo, explora todos los recursos y comprueba por ti misma si es lo que estabas buscando. Si el programa no supera tus expectativas, Hotmart te devuelve el 100% de tu inversión sin hacer ninguna pregunta.",
+    "cta": "Acceder con garantía"
+  },
+  "faq": {
+    "heading": "Preguntas frecuentes",
+    "subtitle": "Todo lo que necesitas saber antes de comenzar.",
+    "items": [
+      { "q": "¿El curso es en vivo o ya está grabado?", "a": "El curso está 100% grabado en videos paso a paso, para que aprendas a tu ritmo, sin horarios y las veces que quieras." },
+      { "q": "¿Necesito saber tejer o tener experiencia?", "a": "No. El curso está diseñado desde cero, incluso si nunca has hecho un bolso antes." },
+      { "q": "¿Incluye lista de materiales?", "a": "Sí. Cada tutorial tiene los materiales necesarios y además un directorio de proveedores económicos para conseguir todo fácilmente." },
+      { "q": "¿Voy a poder vender los bolsos que haga?", "a": "Sí. Puedes crear tu propia colección y vender tus bolsos con acabados tipo boutique." },
+      { "q": "¿El curso incluye los moldes o patrones?", "a": "Sí. Incluye más de 50 patrones exclusivos listos para aplicar en tus diseños." },
+      { "q": "¿Qué tipo de bolsos voy a aprender a hacer?", "a": "Aprenderás bolsos en cuentas (perlas) y en malla plástica, con acabados elegantes y estilo de lujo." },
+      { "q": "¿El acceso es limitado o es para siempre?", "a": "El acceso es de por vida. Puedes entrar cuando quieras y repetir las clases las veces que necesites." },
+      { "q": "¿Puedo ver el curso desde el celular?", "a": "Sí. Puedes acceder desde celular, tablet o computador en cualquier momento." },
+      { "q": "¿El curso incluye soporte o ayuda?", "a": "Sí. Tendrás acceso a nuestra comunidad privada donde podrás resolver dudas y compartir tus avances." },
+      { "q": "¿En qué idioma está el curso?", "a": "Los videos son en español, pero muchos son visuales paso a paso, por lo que son fáciles de seguir incluso sin escuchar." },
+      { "q": "¿Cuánto tiempo tarda en ver resultados?", "a": "Desde las primeras clases podrás crear tus primeros bolsos. Muchas alumnas comienzan a vender en pocas semanas." },
+      { "q": "¿Este curso es solo para hobby o también para negocio?", "a": "Es para ambas. Puedes hacerlo como hobby o convertirlo en una fuente de ingresos desde casa." },
+      { "q": "¿Qué incluye exactamente el curso?", "a": "Incluye: ✦ Curso de bolsos en cuentas ✦ Curso de bolsos en malla plástica ✦ 50 patrones exclusivos ✦ Directorio de proveedores ✦ Plantilla de costos y precios ✦ Manual de marketing digital ✦ Comunidad privada." },
+      { "q": "¿Cómo recibo el acceso después de pagar?", "a": "Recibirás acceso inmediato en tu correo electrónico para ingresar a la plataforma." },
+      { "q": "¿Esto es un curso o venden los bolsos físicos?", "a": "Este es un curso digital. Aprenderás a crear tus propios bolsos paso a paso." },
+      { "q": "¿Necesito comprar materiales antes de empezar?", "a": "No necesitas materiales para empezar. Primero accedes al curso, exploras los diseños y eliges qué bolso quieres crear. Así compras solo lo necesario y evitas gastar dinero en materiales que no vas a usar." }
+    ]
+  },
+  "finalCta": {
+    "badge": "🔥 Última oportunidad — la oferta está finalizando",
+    "heading": "Tu próximo bolso de lujo empieza hoy",
+    "subtitle": "Únete a más de 1.200 alumnas que ya están creando con sus propias manos. Precio especial disponible solo por tiempo limitado.",
+    "cta": "Quiero comenzar hoy",
+    "timerNote": "Cuando el contador llegue a cero, el precio vuelve a $55"
+  },
+  "footer": {
+    "tagline": "hecho a mano · marca propia",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "refund": "Política de reembolso",
+    "contact": "Contacto",
+    "disclaimer": "Este sitio no forma parte ni está respaldado por Facebook™, Google™ o Hotmart™. Los resultados varían según el esfuerzo y dedicación de cada alumna.",
+    "rights": "© 2026 MACA. Todos los derechos reservados."
+  },
+  "socialProof": {
+    "from": "de",
+    "bought": "compró el curso",
+    "ago": "hace {{min}} min",
+    "countries": {
+      "mexico": "México",
+      "colombia": "Colombia",
+      "argentina": "Argentina",
+      "chile": "Chile",
+      "peru": "Perú",
+      "spain": "España",
+      "ecuador": "Ecuador",
+      "uruguay": "Uruguay"
+    }
+  }
+}

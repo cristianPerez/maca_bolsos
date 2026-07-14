@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-// Compradoras que se muestran en el popup (nombre, país, bandera)
+// Compradoras que se muestran en el popup (nombre, clave de país, bandera).
+// El nombre del país se traduce vía socialProof.countries.<key>.
 const BUYERS = [
-  { name: "Alejandra", country: "México", flag: "🇲🇽" },
-  { name: "Valentina", country: "Colombia", flag: "🇨🇴" },
-  { name: "Sofía", country: "Argentina", flag: "🇦🇷" },
-  { name: "Camila", country: "Chile", flag: "🇨🇱" },
-  { name: "Isabella", country: "Perú", flag: "🇵🇪" },
-  { name: "Mariana", country: "España", flag: "🇪🇸" },
-  { name: "Daniela", country: "Ecuador", flag: "🇪🇨" },
-  { name: "Gabriela", country: "México", flag: "🇲🇽" },
-  { name: "Lucía", country: "Uruguay", flag: "🇺🇾" },
-  { name: "Fernanda", country: "México", flag: "🇲🇽" },
+  { name: "Alejandra", countryKey: "mexico", flag: "🇲🇽" },
+  { name: "Valentina", countryKey: "colombia", flag: "🇨🇴" },
+  { name: "Sofía", countryKey: "argentina", flag: "🇦🇷" },
+  { name: "Camila", countryKey: "chile", flag: "🇨🇱" },
+  { name: "Isabella", countryKey: "peru", flag: "🇵🇪" },
+  { name: "Mariana", countryKey: "spain", flag: "🇪🇸" },
+  { name: "Daniela", countryKey: "ecuador", flag: "🇪🇨" },
+  { name: "Gabriela", countryKey: "mexico", flag: "🇲🇽" },
+  { name: "Lucía", countryKey: "uruguay", flag: "🇺🇾" },
+  { name: "Fernanda", countryKey: "mexico", flag: "🇲🇽" },
 ];
 
 const VISIBLE_MS = 27000; // tiempo visible
@@ -19,6 +21,7 @@ const GAP_MS = 3000; // pausa entre popups (visible + pausa = nuevo popup cada 3
 const FIRST_DELAY_MS = 4000; // espera inicial tras cargar la página
 
 export default function SocialProof() {
+  const { t } = useTranslation();
   const [index, setIndex] = useState(0);
   const [visible, setVisible] = useState(false);
   const [minutes, setMinutes] = useState(7);
@@ -64,10 +67,12 @@ export default function SocialProof() {
         </div>
         <div className="pr-1 leading-tight">
           <p className="text-[15px] text-crema">
-            <span className="font-semibold">{buyer.name}</span> de {buyer.country}
+            <span className="font-semibold">{buyer.name}</span> {t("socialProof.from")}{" "}
+            {t(`socialProof.countries.${buyer.countryKey}`)}
           </p>
           <p className="text-sm text-arena/80">
-            compró el curso · <span className="text-dorado">hace {minutes} min</span>
+            {t("socialProof.bought")} ·{" "}
+            <span className="text-dorado">{t("socialProof.ago", { min: minutes })}</span>
           </p>
         </div>
       </div>

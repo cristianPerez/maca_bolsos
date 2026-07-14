@@ -1,35 +1,39 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Reveal from "./Reveal.jsx";
 import ModuleCard from "./ModuleCard.jsx";
 import { CHECKOUT_URL } from "../constants.js";
 
-const badges = [
-  { icon: "★★★★★", label: "+1.200 alumnas" },
-  { icon: "🛡", label: "Garantía 7 días" },
-  { icon: "♾", label: "Acceso de por vida" },
-];
+// Iconos de las insignias (el texto viene de las traducciones).
+const badgeIcons = ["★★★★★", "🛡", "♾"];
 
 // Imágenes reales de bolsos (mismas del sitio) para los tutoriales.
 const BAG = "https://manoscreadoras.lovable.app/assets";
 
-// Cada slide del carrusel usa la misma tarjeta maestra (ModuleCard).
-// Solo cambia imagen, título, subtítulo y tag/duración — el diseño no cambia.
-const slides = [
-  { image: "/img/curso/cards/empieza.jpg", title: "Empieza Aquí", subtitle: "Start here", tag: "Inicio", desc: "Bienvenida y primeros pasos" },
-  { image: "/img/curso/cards/comunidad.jpg", title: "Únete a la comunidad", subtitle: "Join our community", tag: "Comunidad", desc: "Comunidad privada de alumnas" },
-  { image: `${BAG}/bag-pearl-hobo-CnE8Gf-d.png`, title: "Tutorial 1", subtitle: "Malla plástica y cuentas", duration: "24:18" },
-  { image: `${BAG}/bag-glacier-blue--LWN4-v5.jpg`, title: "Tutorial 2", subtitle: "Cuentas azul hielo · asa rígida", duration: "38:52" },
-  { image: `${BAG}/bag-pink-crystal-Bfvk7sAM.png`, title: "Tutorial 3", subtitle: "Cristal rosado · cadena dorada", duration: "45:07" },
-  { image: `${BAG}/bag-pearl-bow-BJNYOkqF.png`, title: "Tutorial 4", subtitle: "Perlas marfil · lazo de seda", duration: "32:26" },
-  { image: `${BAG}/bag-onix-cristal-Q1dYU0VE.jpg`, title: "Tutorial 5", subtitle: "Cuentas negras · estilo noche", duration: "29:33" },
-  { image: `${BAG}/bag-gold-crystal-BEEnSFAn.png`, title: "Tutorial 6", subtitle: "Cristal dorado · clutch", duration: "51:20" },
-  { image: `${BAG}/bag-pearl-royale-Cy5cVop9.jpg`, title: "Tutorial 7", subtitle: "Perlas blancas · bordado a mano", duration: "22:45" },
-  { image: `${BAG}/bag-champagne-facetado-i7fCs5gy.jpg`, title: "Tutorial 8", subtitle: "Cristal champagne · cadena dorada", duration: "01:26:29" },
-  { image: `${BAG}/bag-pearl-coin-boQNDBR1.png`, title: "Así colocas un herraje", subtitle: "Cierre y herraje profesional", duration: "35:37" },
-  { image: "/img/curso/cards/patrones.jpg", title: "Patrones de bolsos", subtitle: "En cuentas · descargables", tag: "Descargable", desc: "+50 diseños listos para usar" },
+// Solo los datos que NO cambian con el idioma (imagen y duración).
+// El texto de cada tarjeta (título, subtítulo, tag, desc) viene de las
+// traducciones y se combina por índice.
+const slideMeta = [
+  { image: "/img/curso/cards/empieza.jpg" },
+  { image: "/img/curso/cards/comunidad.jpg" },
+  { image: `${BAG}/bag-pearl-hobo-CnE8Gf-d.png`, duration: "24:18" },
+  { image: `${BAG}/bag-glacier-blue--LWN4-v5.jpg`, duration: "38:52" },
+  { image: `${BAG}/bag-pink-crystal-Bfvk7sAM.png`, duration: "45:07" },
+  { image: `${BAG}/bag-pearl-bow-BJNYOkqF.png`, duration: "32:26" },
+  { image: `${BAG}/bag-onix-cristal-Q1dYU0VE.jpg`, duration: "29:33" },
+  { image: `${BAG}/bag-gold-crystal-BEEnSFAn.png`, duration: "51:20" },
+  { image: `${BAG}/bag-pearl-royale-Cy5cVop9.jpg`, duration: "22:45" },
+  { image: `${BAG}/bag-champagne-facetado-i7fCs5gy.jpg`, duration: "01:26:29" },
+  { image: `${BAG}/bag-pearl-coin-boQNDBR1.png`, duration: "35:37" },
+  { image: "/img/curso/cards/patrones.jpg" },
 ];
 
 export default function CourseCarousel() {
+  const { t } = useTranslation();
+  const slidesText = t("carousel.slides", { returnObjects: true });
+  const badgeLabels = t("carousel.badges", { returnObjects: true });
+  const slides = slideMeta.map((m, i) => ({ ...m, ...slidesText[i] }));
+
   const [index, setIndex] = useState(0);
   const [drag, setDrag] = useState(0); // desplazamiento en px durante el arrastre
   const [vw, setVw] = useState(0); // ancho del viewport del carrusel
@@ -109,13 +113,12 @@ export default function CourseCarousel() {
       <div className="mx-auto max-w-4xl text-center">
         <Reveal>
           <h2 className="font-serif text-3xl font-semibold text-negro-cafe sm:text-4xl">
-            Así se ve nuestro curso por dentro
+            {t("carousel.heading")}
           </h2>
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-4 max-w-xl text-negro-cafe/75">
-            Un vistazo rápido a las clases, los materiales y la comunidad que te
-            acompañará en cada punto y cada nudo.
+            {t("carousel.subtitle")}
           </p>
         </Reveal>
 
@@ -125,8 +128,8 @@ export default function CourseCarousel() {
             <div
               ref={containerRef}
               role="group"
-              aria-roledescription="carrusel"
-              aria-label="Vistazo al curso por dentro"
+              aria-roledescription={t("carousel.aria.roledescription")}
+              aria-label={t("carousel.aria.region")}
               tabIndex={0}
               onKeyDown={onKeyDown}
               onPointerDown={onPointerDown}
@@ -154,7 +157,7 @@ export default function CourseCarousel() {
                       href={CHECKOUT_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`Ir al curso — ${slide.title}`}
+                      aria-label={t("carousel.aria.goCourse", { title: slide.title })}
                       draggable={false}
                       onDragStart={(e) => e.preventDefault()}
                       onClick={(e) => {
@@ -172,7 +175,7 @@ export default function CourseCarousel() {
               {index > 0 && (
                 <button
                   type="button"
-                  aria-label="Imagen anterior"
+                  aria-label={t("carousel.aria.prev")}
                   onClick={prev}
                   onPointerDown={(e) => e.stopPropagation()}
                   className="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-negro-cafe/60 text-xl text-crema shadow-lg backdrop-blur transition hover:bg-negro-cafe/80 sm:left-4"
@@ -185,7 +188,7 @@ export default function CourseCarousel() {
               {index < count - 1 && (
                 <button
                   type="button"
-                  aria-label="Imagen siguiente"
+                  aria-label={t("carousel.aria.next")}
                   onClick={next}
                   onPointerDown={(e) => e.stopPropagation()}
                   className="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-negro-cafe/60 text-xl text-crema shadow-lg backdrop-blur transition hover:bg-negro-cafe/80 sm:right-4"
@@ -201,7 +204,7 @@ export default function CourseCarousel() {
                 <button
                   key={slide.image}
                   type="button"
-                  aria-label={`Ir a la imagen ${i + 1}`}
+                  aria-label={t("carousel.aria.goToImage", { n: i + 1 })}
                   aria-current={i === index}
                   onClick={() => goTo(i)}
                   className={`h-2 rounded-full transition-all ${
@@ -217,13 +220,13 @@ export default function CourseCarousel() {
 
         <Reveal delay={300}>
           <div className="mx-auto mt-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-            {badges.map((badge) => (
+            {badgeIcons.map((icon, i) => (
               <div
-                key={badge.label}
+                key={i}
                 className="flex items-center gap-2 rounded-full bg-arena/60 px-4 py-2 text-sm font-medium text-terracota-oscuro"
               >
-                <span>{badge.icon}</span>
-                <span>{badge.label}</span>
+                <span>{icon}</span>
+                <span>{badgeLabels[i]}</span>
               </div>
             ))}
           </div>
